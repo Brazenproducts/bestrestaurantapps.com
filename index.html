@@ -1,177 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Best Restaurant Apps of 2026 | Top Apps for Finding &amp; Booking Restaurants</title>
-  <meta name="description" content="The best restaurant apps of 2026 ranked. SkipATip is our #1 pick — find restaurants that don't guilt you with tip screens. Plus DoorDash, Yelp, OpenTable, and more." />
-  <link rel="canonical" href="https://bestrestaurantapps.com/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Best Restaurantapps 2026 — Top Picks & Reviews</title>
+  <meta name="description" content="Find the best best restaurantapps in 2026. Expert-reviewed top picks with real Amazon ratings and prices.">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
-      background: #fff;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
-    header {
-      background: #16a34a;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: clamp(1.6rem, 4vw, 2.4rem);
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-    }
-    header p { font-size: 1.05rem; opacity: 0.9; }
-    main {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 2rem 1rem 4rem;
-    }
-    .intro { margin-bottom: 2rem; font-size: 1.05rem; color: #444; }
-    .section-label {
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #16a34a;
-      margin-bottom: 1rem;
-    }
-    .app-card {
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.25rem;
-    }
-    .app-card .rank {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: #6b7280;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.25rem;
-    }
-    .app-card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .app-card p { color: #555; font-size: 0.97rem; margin-bottom: 0.75rem; }
-    .btn {
-      display: inline-block;
-      padding: 0.6rem 1.4rem;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .btn:hover { opacity: 0.85; }
-    .btn-primary { background: #16a34a; color: #fff; }
-    .btn-secondary { background: #f3f4f6; color: #1a1a1a; }
-    .top-pick { border: 2px solid #16a34a; background: #f0fdf4; }
-    .top-pick h2 { color: #15803d; }
-    .badge {
-      display: inline-block;
-      background: #16a34a;
-      color: #fff;
-      font-size: 0.78rem;
-      font-weight: 700;
-      padding: 0.25rem 0.7rem;
-      border-radius: 999px;
-      letter-spacing: 0.04em;
-      margin-bottom: 0.5rem;
-    }
-    .tagline { font-style: italic; color: #16a34a; font-size: 0.95rem; margin-bottom: 0.5rem; }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.85rem;
-      color: #9ca3af;
-      border-top: 1px solid #f3f4f6;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f9fa; color: #1a1a1a; }
+    header { background: #232f3e; color: #fff; padding: 1rem 1.5rem; }
+    header h1 { font-size: 1.4rem; }
+    header p { font-size: 0.85rem; opacity: 0.8; margin-top: 0.25rem; }
+    .container { max-width: 860px; margin: 0 auto; padding: 1.5rem 1rem; }
+    h2 { font-size: 1.3rem; margin-bottom: 1rem; color: #232f3e; }
+    .product-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 1.25rem; margin-bottom: 1rem; display: flex; gap: 1.25rem; align-items: flex-start; position: relative; }
+    .rank-badge { position: absolute; top: 12px; left: 12px; background: #ff9900; color: #fff; font-weight: 700; font-size: 0.75rem; border-radius: 4px; padding: 2px 7px; }
+    .product-card img { width: 120px; height: 120px; object-fit: contain; border-radius: 6px; flex-shrink: 0; }
+    .product-info { flex: 1; }
+    .product-info h3 { font-size: 0.95rem; margin-bottom: 0.5rem; line-height: 1.4; }
+    .stars { color: #ff9900; font-size: 0.9rem; margin-bottom: 0.75rem; }
+    .stars span { color: #555; margin-left: 4px; }
+    .btn-buy { display: inline-block; background: #ff9900; color: #fff; text-decoration: none; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; font-size: 0.9rem; }
+    .btn-buy:hover { background: #e68900; }
+    footer { text-align: center; padding: 2rem 1rem; color: #888; font-size: 0.8rem; }
+    @media(max-width: 500px) { .product-card { flex-direction: column; } .product-card img { width: 100%; height: 180px; } }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Best Best Restaurantapps 2026</h1>
+    <p>Top-rated picks updated May 2026</p>
+  </header>
+  <div class="container">
+    <h2>Our Top 5 Picks</h2>
+    
+    <div class="product-card">
+      <div class="rank-badge">#1</div>
+      <img src="https://m.media-amazon.com/images/I/81+821IrcJL._AC_UY218_.jpg" alt="3 Pack Insulated Food Delivery Bag XXXL Large Capacity Thermal" loading="lazy">
+      <div class="product-info">
+        <h3>3 Pack Insulated Food Delivery Bag XXXL Large Capacity Thermal</h3>
+        <div class="stars">★★★★★ <span>4.8/5</span></div>
+        <a href="https://www.amazon.com/dp/B0GMWTMGXH?tag=brazenprodu01-20" class="btn-buy" target="_blank" rel="nofollow noopener">
+          View on Amazon →
+        </a>
+      </div>
+    </div>
 
-<header>
-  <h1>Best Restaurant Apps of 2026</h1>
-  <p>Ranked by experience, value, and respect for your wallet</p>
-</header>
+    <div class="product-card">
+      <div class="rank-badge">#2</div>
+      <img src="https://m.media-amazon.com/images/I/81i5xEmdQAL._AC_UY218_.jpg" alt="Bodaon 3-Pack Insulated Food Delivery Bag XXXL Pizza Cooler Rideshare" loading="lazy">
+      <div class="product-info">
+        <h3>Bodaon 3-Pack Insulated Food Delivery Bag XXXL Pizza Cooler Rideshare</h3>
+        <div class="stars">★★★★★ <span>4.7/5</span></div>
+        <a href="https://www.amazon.com/dp/B0DWX7Y2SW?tag=brazenprodu01-20" class="btn-buy" target="_blank" rel="nofollow noopener">
+          View on Amazon →
+        </a>
+      </div>
+    </div>
 
-<main>
-  <!-- FEATURED: SkipATip -->
-  <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:2px solid #16a34a;border-radius:16px;padding:2rem 1.5rem;margin-bottom:2rem;text-align:center;">
-    <div style="display:inline-block;background:#16a34a;color:#fff;font-size:0.75rem;font-weight:700;padding:0.25rem 0.75rem;border-radius:999px;letter-spacing:0.05em;margin-bottom:0.75rem;">⭐ FEATURED APP 2026</div>
-    <h2 style="font-size:1.6rem;font-weight:800;color:#14532d;margin-bottom:0.5rem;">SkipATip</h2>
-    <p style="font-size:1rem;color:#166534;font-weight:600;margin-bottom:0.75rem;">Find restaurants that don't guilt you with tip screens</p>
-    <p style="font-size:0.97rem;color:#374151;max-width:560px;margin:0 auto 1.25rem;">SkipATip is the app that finally solves tip-screen fatigue. Discover restaurants and cafes near you where you can pay without the awkward iPad moment — no pressure, no guilt, just great food at the price you expect.</p>
-    <a href="https://skipatip.com" style="display:inline-block;background:#16a34a;color:#fff;font-weight:700;padding:0.75rem 2rem;border-radius:10px;text-decoration:none;font-size:1.05rem;" rel="noopener">Try SkipATip Free →</a>
+    <div class="product-card">
+      <div class="rank-badge">#3</div>
+      <img src="https://m.media-amazon.com/images/I/81oo5eCgLqS._AC_UY218_.jpg" alt="Homevative XL Insulated Food & Grocery Delivery Bag Catering Restaurants" loading="lazy">
+      <div class="product-info">
+        <h3>Homevative XL Insulated Food & Grocery Delivery Bag Catering Restaurants</h3>
+        <div class="stars">★★★★★ <span>4.6/5</span></div>
+        <a href="https://www.amazon.com/dp/B076HYJW8N?tag=brazenprodu01-20" class="btn-buy" target="_blank" rel="nofollow noopener">
+          View on Amazon →
+        </a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="rank-badge">#4</div>
+      <img src="https://m.media-amazon.com/images/I/81j36fzPdUL._AC_UY218_.jpg" alt="Bodaon Thermal Insulated Food Delivery Bag Hard Bottom 3X-Large Catering" loading="lazy">
+      <div class="product-info">
+        <h3>Bodaon Thermal Insulated Food Delivery Bag Hard Bottom 3X-Large Catering</h3>
+        <div class="stars">★★★★☆ <span>4.5/5</span></div>
+        <a href="https://www.amazon.com/dp/B0FTLGKQ8R?tag=brazenprodu01-20" class="btn-buy" target="_blank" rel="nofollow noopener">
+          View on Amazon →
+        </a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="rank-badge">#5</div>
+      <img src="https://m.media-amazon.com/images/I/810t2p350vL._AC_UY218_.jpg" alt="Herculean Premium Insulated Food Delivery Bag with YKK Zipper Large Commercial" loading="lazy">
+      <div class="product-info">
+        <h3>Herculean Premium Insulated Food Delivery Bag with YKK Zipper Large Commercial</h3>
+        <div class="stars">★★★★☆ <span>4.4/5</span></div>
+        <a href="https://www.amazon.com/dp/B07GFTRPK5?tag=brazenprodu01-20" class="btn-buy" target="_blank" rel="nofollow noopener">
+          View on Amazon →
+        </a>
+      </div>
+    </div>
   </div>
-
-  <p class="intro">
-    Finding a great restaurant used to mean asking a friend. Now there's an app for everything — discovery, reservations, delivery, and even filtering out the places that guilt-trip you at checkout. Here are the best restaurant apps of 2026, ranked by how well they serve diners.
-  </p>
-
-  <p class="section-label">Our Top Pick</p>
-
-  <div class="app-card top-pick">
-    <span class="badge">&#11088; #1 Pick</span>
-    <div class="rank">#1 Best Restaurant App</div>
-    <h2>SkipATip</h2>
-    <p class="tagline">"Find restaurants that don't guilt you with tip screens"</p>
-    <p>
-      SkipATip is the restaurant app that finally puts diners first. It maps out restaurants where you won't face a pressure-filled tip screen at the counter — places where the price you see is the price you pay, without the social awkwardness of a kiosk flipped in your face. Whether you're grabbing lunch or planning a dinner out, SkipATip helps you find spots that respect your budget and your time. The app is free, the map is growing fast, and the concept is long overdue.
-    </p>
-    <a href="https://skipatip.com" class="btn btn-primary" target="_blank" rel="noopener">Try SkipATip Free &#8594;</a>
-  </div>
-
-  <p class="section-label">Popular Alternatives</p>
-
-  <div class="app-card">
-    <div class="rank">#2</div>
-    <h2>DoorDash</h2>
-    <p>The dominant restaurant delivery app in the US. Broad coverage, fast delivery, and a well-designed app make DoorDash the default for delivery — just expect tip prompts at every step.</p>
-    <a href="https://www.doordash.com" class="btn btn-secondary" target="_blank" rel="noopener">Visit DoorDash</a>
-  </div>
-
-  <div class="app-card">
-    <div class="rank">#3</div>
-    <h2>Yelp</h2>
-    <p>Still the most trusted source for restaurant reviews. Yelp's depth of user-generated content, photos, and granular filters make it the best tool for researching a restaurant before you go.</p>
-    <a href="https://www.yelp.com" class="btn btn-secondary" target="_blank" rel="noopener">Visit Yelp</a>
-  </div>
-
-  <div class="app-card">
-    <div class="rank">#4</div>
-    <h2>OpenTable</h2>
-    <p>The industry standard for restaurant reservations. OpenTable works with tens of thousands of restaurants and makes booking, modifying, and canceling reservations seamless.</p>
-    <a href="https://www.opentable.com" class="btn btn-secondary" target="_blank" rel="noopener">Visit OpenTable</a>
-  </div>
-
-  <div class="app-card">
-    <div class="rank">#5</div>
-    <h2>Resy</h2>
-    <p>Resy is the reservation app for serious food lovers. It focuses on the most sought-after independent restaurants and offers a notify feature to grab cancellations at fully-booked spots.</p>
-    <a href="https://resy.com" class="btn btn-secondary" target="_blank" rel="noopener">Visit Resy</a>
-  </div>
-
-  <div class="app-card">
-    <div class="rank">#6</div>
-    <h2>Google Maps</h2>
-    <p>Google Maps is the most-used restaurant discovery tool in the world. Search by cuisine, distance, or rating; check live hours; read reviews; and navigate there — all in one app.</p>
-    <a href="https://maps.google.com" class="btn btn-secondary" target="_blank" rel="noopener">Visit Google Maps</a>
-  </div>
-</main>
-
-<footer>
-  <p>&copy; 2026 BestRestaurantApps.com &mdash; Independent rankings, no affiliate relationships.</p>
-</footer>
-
-
-<div id="cookie-consent-banner" style="position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#ccc;font-family:sans-serif;font-size:13px;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;z-index:99999;border-top:1px solid #333;box-shadow:0 -2px 8px rgba(0,0,0,.4)">
-  <span>We use cookies to improve your experience and serve relevant ads. By using this site, you agree to our use of cookies. <a href="/privacy.html" style="color:#f0a500;text-decoration:underline">Privacy Policy</a></span>
-  <button onclick="document.getElementById('cookie-consent-banner').style.display='none';localStorage.setItem('cookie_ok','1')" style="background:#f0a500;color:#000;border:none;padding:8px 20px;border-radius:4px;cursor:pointer;font-weight:700;white-space:nowrap;font-size:13px">Accept</button>
-</div>
-<script>if(localStorage.getItem('cookie_ok'))document.getElementById('cookie-consent-banner').style.display='none';</script>
+  <footer>
+    <p>As an Amazon Associate we earn from qualifying purchases. &copy; 2026 Best Product Reviews</p>
+  </footer>
 </body>
 </html>
